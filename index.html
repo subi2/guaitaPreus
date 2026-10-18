@@ -1,0 +1,57 @@
+<!--
+  Guaita Apps - Suite d'eines autònomes per a arquitectura, BIM i documentació.
+  Copyright (c) 2026 Jordi Subirós
+  GNU Affero General Public License v3.0
+  See LICENSE file for details
+-->
+<!DOCTYPE html>
+<html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>guaitaPreus — Guaita Apps</title><link rel="icon" type="image/svg+xml" href="icons/icon.svg"><style>
+:root{--bg:#0E1116;--bg-deep:#0B0D10;--bg-panel:#171B21;--bg-surface:#1E232B;--bg-hover:#252B34;--border:#2A313B;--border-strong:#4A5361;--text:#E7EAEE;--text-mid:#B9C0CA;--text-dim:#8B939F;--text-dim2:#5C6470;--accent:#D6FB41;--accent-line:#D6FB41;--accent-text:#D6FB41;--on-accent:#1A2000;--accent-soft:rgba(214,251,65,.08);--warn-bg:#3A2F10;--warn-t:#FFD98A;--warn-b:#F5B942;--err-bg:#3A1A1E;--err-t:#FFD0D0}
+:root[data-t="light"]{--bg:#F4F5F7;--bg-deep:#ECEEF1;--bg-panel:#FFFFFF;--bg-surface:#F1F3F5;--bg-hover:#E9ECF0;--border:#D5DAE0;--border-strong:#9AA3AE;--text:#161A20;--text-mid:#3D4652;--text-dim:#6B7380;--text-dim2:#8B939F;--accent-line:#8DB300;--accent-text:#5E7700;--accent-soft:rgba(141,179,0,.10);--warn-bg:#FDF0D0;--warn-t:#7A5200;--warn-b:#B86E00;--err-bg:#FBE3E0;--err-t:#A92315}
+@media(prefers-color-scheme:light){:root:not([data-t="dark"]){--bg:#F4F5F7;--bg-deep:#ECEEF1;--bg-panel:#FFFFFF;--bg-surface:#F1F3F5;--bg-hover:#E9ECF0;--border:#D5DAE0;--border-strong:#9AA3AE;--text:#161A20;--text-mid:#3D4652;--text-dim:#6B7380;--text-dim2:#8B939F;--accent-line:#8DB300;--accent-text:#5E7700;--accent-soft:rgba(141,179,0,.10);--warn-bg:#FDF0D0;--warn-t:#7A5200;--warn-b:#B86E00;--err-bg:#FBE3E0;--err-t:#A92315}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 'IBM Plex Sans','Space Grotesk',system-ui,-apple-system,sans-serif}
+code,kbd,.mono{font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace}
+code{background:var(--bg-surface);border:1px solid var(--border);border-radius:4px;padding:1px 5px;font-size:.88em}
+kbd{background:var(--bg-surface);border:1px solid var(--border-strong);border-bottom-width:2px;border-radius:4px;padding:1px 6px;font-size:.82em}
+a{color:var(--accent-text)}
+.cells{display:inline-grid;grid-template-columns:13px 13px;gap:3px;vertical-align:middle}.cells span{display:block;width:13px;height:13px}
+.cells span:nth-child(1){background:#C6FF00}.cells span:nth-child(2){background:#FF2ECC}.cells span:nth-child(3){background:#00E5FF}.cells span:nth-child(4){background:#FFE500}
+.brand{display:flex;align-items:center;gap:10px;font:900 20px 'Arial Black',system-ui,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-text)}
+.brand small{font:500 11px 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--text-dim);margin-left:2px;text-transform:lowercase}
+.hero{background:var(--bg-deep);border-bottom:2px solid var(--accent-line);padding:28px 20px 30px}
+.hero .in,.wrap,.fin{max-width:1060px;margin:0 auto}
+.tag{display:inline-block;margin-top:18px;font:600 10px 'IBM Plex Mono',monospace;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim2)}
+h1{margin:6px 0 8px;font-size:34px;line-height:1.15}
+.lead{margin:0;max-width:720px;color:var(--text-mid);font-size:16.5px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;padding:9px 16px;border:1px solid var(--border-strong);border-radius:5px;color:var(--text);text-decoration:none;font-weight:600;font-size:14px;background:var(--bg-surface)}
+.btn:hover{background:var(--bg-hover)}.btn.pri{background:var(--accent);border-color:var(--accent-line);color:var(--on-accent)}
+.wrap{padding:26px 20px 10px;display:grid;grid-template-columns:210px 1fr;gap:34px}
+@media(max-width:820px){.wrap{grid-template-columns:1fr}.toc{position:static!important}}
+.toc{position:sticky;top:16px;align-self:start;font-size:13px}.toc a{display:block;padding:5px 10px;border-left:2px solid var(--border);color:var(--text-mid);text-decoration:none}
+.toc a:hover,.toc a.on{border-left-color:var(--accent-line);color:var(--accent-text);background:var(--accent-soft)}
+section{margin-bottom:34px}h2{margin:0;font:600 11px 'IBM Plex Mono',monospace;letter-spacing:2px;text-transform:uppercase;color:var(--accent-text)}
+.st{font-size:24px;font-weight:600;margin:2px 0 10px}h3{margin:18px 0 4px;font-size:16px}
+.note{border:1px dashed var(--border-strong);border-radius:5px;padding:10px 13px;color:var(--text-mid);font-size:14px;margin:12px 0}
+.note.warn{background:var(--warn-bg);border:1px solid var(--warn-b);color:var(--warn-t)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}.card{background:var(--bg-panel);border:1px solid var(--border);border-radius:6px;padding:13px 15px}.card b{display:block;margin-bottom:3px}.card p{margin:0;font-size:13.5px;color:var(--text-mid)}
+ol.steps{padding-left:22px}ol.steps li{margin:6px 0}
+table.tbl{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}table.tbl th,table.tbl td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}table.tbl th{background:var(--bg-surface);font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--text-dim)}
+details{border:1px solid var(--border);border-radius:6px;margin:8px 0;background:var(--bg-panel)}summary{cursor:pointer;padding:9px 13px;font-weight:600}details p{margin:0;padding:0 13px 12px;color:var(--text-mid)}
+footer{margin-top:30px;border-top:2px solid var(--accent-line);background:var(--bg-deep);padding:18px 20px 22px;color:var(--text-dim);font-size:12.5px}
+.fb{display:flex;align-items:center;gap:8px;font:900 12px 'Arial Black',system-ui;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent-text);margin-bottom:8px}
+.fb .cells{grid-template-columns:6px 6px;gap:2px}.fb .cells span{width:6px;height:6px}.fb em{font-style:normal;color:var(--text)}
+footer p{margin:4px 0}
+</style></head><body><header class="hero"><div class="in"><div class="brand"><span class="cells"><span></span><span></span><span></span><span></span></span> GUAITA<small>preus</small></div>
+<span class="tag">Guaita Apps · v0.9</span><h1>guaitaPreus</h1>
+<p class="lead">Visor i editor obert de bases de preus de la construcció (BC3 / FIEBDC-3), pressupostos i amidaments, en un sol fitxer HTML. Funciona al navegador i les dades no surten del teu ordinador.</p>
+<div class="btns"><a class="btn pri" href="pagesCAT/guaitaPreus.html">Obre l'app (català)</a><a class="btn" href="pagesCAT/HLP%20guaitaPreus-ajuda.html">Ajuda</a><a class="btn" href="https://github.com/subi2/guaitapreus">Repositori</a></div></div></header>
+<main class="fin" style="padding:26px 20px 0"><section><h2>Què pots fer-hi</h2><div class="st">Eina oberta per a preus, pressupostos i certificacions</div>
+<div class="cards"><div class="card"><b>Bases BC3</b><p>Importa, consulta i cerca bases de preus en FIEBDC-3 (ANSI, UTF-8, CP850, CP437).</p></div>
+<div class="card"><b>Pressupostos</b><p>Capítols, partides, descomposicions i amidaments, amb desfés i refés.</p></div>
+<div class="card"><b>Certificacions i comparació</b><p>Compara pressupostos, actualitza preus des d'una base i certifica amb comprovació d'estructura.</p></div>
+<div class="card"><b>Exportació</b><p>BC3, Excel, HTML imprimible, Markdown, LaTeX, CSV i fitxes de partides.</p></div>
+<div class="card"><b>GuBIMClass</b><p>Mapeja conceptes amb la classificació GuBIMClass (la taula es carrega a l'app).</p></div>
+<div class="card"><b>Privadesa</b><p>Tot es processa al navegador i es desa en local. No s'envia res a cap servidor.</p></div></div>
+<div class="note">Aquest repositori no inclou cap base de preus. Interfície i ajuda, de moment, només en català; el README és bilingüe (CA/EN).</div></section></main><footer><div class="fin"><div class="fb"><span class="cells"><span></span><span></span><span></span><span></span></span> Guaita<em>Preus</em></div><p><b>SBS BIM Consulting 2026</b> · © Jordi Subirós · AGPL-3.0-only</p><p>Guaita Apps es distribueix «tal com és», sense cap garantia. Les eines estan pensades desde la recerca i com a suport tècnic i educatiu; la verificació dels resultats i la responsabilitat derivada del seu ús recauen únicament sobre l'usuari final.</p></div></footer></body></html>

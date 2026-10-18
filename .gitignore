@@ -1,0 +1,7 @@
+# Bases de preus i bancs: no es publiquen en aquest repositori
+*.bc3
+*.BC3
+gubimpreus*
+node_modules/
+.DS_Store
+Thumbs.db
