@@ -23,6 +23,7 @@ guaitaPreus és una eina oberta, pensada per a l'ensenyament i la consultoria, q
 - Fitxes imprimibles de partides, validació de preus i referències, informe de càrrega.
 - Mapejat amb la classificació **GuBIMClass** (vegeu l'avís més avall).
 - Tema fosc i clar.
+- Barres laterals redimensionables i plegables, pestanyes de fitxers, mode concentració, desplegar/replegar l'arbre per nivells i branques, filtres plegables i fitxa amb seccions plegables.
 
 ### Com s'utilitza
 1. Obre `pagesCAT/guaitaPreus.html` al navegador (o publica el repositori amb GitHub Pages i obre `index.html`).
@@ -54,6 +55,7 @@ guaitaPreus is an open tool for teaching and consulting that lets you **browse, 
 - Printable item sheets, price/reference validation, load report.
 - Mapping to the **GuBIMClass** classification (see the notice below).
 - Dark and light themes.
+- Resizable and collapsible side panels, file tabs, focus mode, expand/collapse the tree by level or branch, collapsible filters and a detail view with collapsible sections.
 
 ### How to use it
 1. Open `pagesCAT/guaitaPreus.html` in your browser (or publish the repository with GitHub Pages and open `index.html`).
