@@ -22,7 +22,7 @@ guaitaPreus és una eina oberta, pensada per a l'ensenyament i la consultoria, q
 - **Compara** pressupostos, **actualitza preus** des d'una base, **certificacions** amb comprovació d'estructura.
 - Fitxes imprimibles de partides, informe de càrrega i **validació ampliada** (cicles, referències, preus, unitats, duplicats, orfes) amb filtres i exportació.
 - **Anàlisi** a la fitxa: per naturalesa, per capítol, **Pareto ABC** de partides i **escandall de recursos**, amb gràfics.
-- **Ajust massiu de preus** amb simulació del PEM, **bloqueig de preu**, comparació de **bases**, evolució de certificacions amb **cost real**, i visualització dels registres BC3 no interpretats.
+- **Ajust massiu de preus** amb simulació del PEM, **bloqueig de preu**, comparació de **bases**, evolució de certificacions amb **cost real** (bloquejos i certificacions viatgen dins el BC3 com a registres propis `~Z|GUAITAPREUS`), i visualització dels registres BC3 no interpretats.
 - Mapejat amb la classificació **GuBIMClass** (vegeu l'avís més avall).
 - Tema fosc i clar.
 - Barres laterals redimensionables i plegables, pestanyes de fitxers, mode concentració, desplegar/replegar l'arbre per nivells i branques, filtres plegables i fitxa amb seccions plegables.
@@ -56,7 +56,7 @@ guaitaPreus is an open tool for teaching and consulting that lets you **browse, 
 - **Compare** budgets, **update prices** from another database, **certifications** with structure checks.
 - Printable item sheets, load report and **extended validation** (cycles, references, prices, units, duplicates, orphans) with filters and export.
 - **Analysis** tab in the item view: by nature, by chapter, **ABC Pareto** of items and **resource breakdown**, with charts.
-- **Mass price adjustment** with budget simulation, **price lock**, base-to-base comparison, certification evolution with **actual cost**, and a view of uninterpreted BC3 records.
+- **Mass price adjustment** with budget simulation, **price lock**, base-to-base comparison, certification evolution with **actual cost** (locks and certifications travel inside the BC3 as own `~Z|GUAITAPREUS` records), and a view of uninterpreted BC3 records.
 - Mapping to the **GuBIMClass** classification (see the notice below).
 - Dark and light themes.
 - Resizable and collapsible side panels, file tabs, focus mode, expand/collapse the tree by level or branch, collapsible filters and a detail view with collapsible sections.
