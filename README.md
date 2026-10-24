@@ -3,7 +3,7 @@
 **Visor i editor obert de bases de preus de la construcció (BC3 / FIEBDC-3), pressupostos i amidaments, en un sol fitxer HTML.**
 **Open viewer and editor for construction price databases (BC3 / FIEBDC-3), budgets and measurements, in a single HTML file.**
 
-[Obre l'app · Open the app](pagesCAT/guaitaPreus.html) · [Ajuda (CA)](pagesCAT/HLP%20guaitaPreus-ajuda.html) · [Presentació](index.html)
+[Obre l'app (CA)](pagesCAT/guaitaPreus.html) · [Ajuda (CA)](pagesCAT/HLP%20guaitaPreus-ajuda.html) · [Open the app (EN)](pagesENG/guaitaPreus.html) · [Help (EN)](pagesENG/HLP%20guaitaPreus-help.html) · [Presentació / Overview](index.html)
 
 Part of the **Guaita Apps** suite · © SBS BiM Consulting, Jordi Subirós · AGPL-3.0-only
 
@@ -25,12 +25,13 @@ guaitaPreus és una eina oberta, pensada per a l'ensenyament i la consultoria, q
 - **Ajust massiu de preus** amb simulació del PEM, **bloqueig de preu**, comparació de **bases**, evolució de certificacions amb **cost real** (bloquejos i certificacions viatgen dins el BC3 com a registres propis `~Z|GUAITAPREUS`), avís si el tipus declarat al BC3 no coincideix amb el contingut, i visualització dels registres BC3 no interpretats.
 - Mapejat amb la classificació **GuBIMClass** (vegeu l'avís més avall).
 - Tema fosc i clar.
+- Interfície i ajuda en **català i anglès** (`pagesCAT` / `pagesENG`); la importació d'Excel/CSV entén capçaleres en català, castellà i anglès.
 - Barres laterals redimensionables i plegables, pestanyes de fitxers, mode concentració, desplegar/replegar l'arbre per nivells i branques, filtres plegables i fitxa amb seccions plegables.
 
 ### Com s'utilitza
-1. Obre `pagesCAT/guaitaPreus.html` al navegador (o publica el repositori amb GitHub Pages i obre `index.html`).
+1. Obre `pagesCAT/guaitaPreus.html` (català) o `pagesENG/guaitaPreus.html` (anglès) al navegador (o publica el repositori amb GitHub Pages i obre `index.html`).
 2. Importa un BC3 propi o crea una base o un pressupost.
-3. Consulta l'ajuda: [`pagesCAT/HLP guaitaPreus-ajuda.html`](pagesCAT/HLP%20guaitaPreus-ajuda.html).
+3. Consulta l'ajuda: [`pagesCAT/HLP guaitaPreus-ajuda.html`](pagesCAT/HLP%20guaitaPreus-ajuda.html) (també en anglès: [`pagesENG/HLP guaitaPreus-help.html`](pagesENG/HLP%20guaitaPreus-help.html)).
 
 ### Dades i privadesa
 Aquest repositori **no inclou cap base de preus** (BC3). Les bases que carreguis són dels seus titulars i es processen només al teu navegador.
@@ -39,7 +40,7 @@ Aquest repositori **no inclou cap base de preus** (BC3). Les bases que carreguis
 L'app pot relacionar conceptes amb codis **GuBIMClass** (© 2017 GuBIMCat). La taula de codis és de tercers: **no s'inclou** en aquest repositori ni a l'app publicada, i no queda coberta per l'AGPL. Es pot carregar des de l'app (*Eines ▸ GuBIMClass i mapejat*). Vegeu [`NOTICE.md`](NOTICE.md).
 
 ### Llicència
-GNU Affero General Public License v3.0 only. Vegeu [`LICENSE`](LICENSE). Guaita Apps es distribueix «tal com és», sense cap garantia; la verificació dels resultats i la responsabilitat derivada del seu ús recauen únicament sobre l'usuari final.
+GNU Affero General Public License v3.0 only. Vegeu [`LICENSE`](LICENSE). Guaita Apps es distribueix «tal com és», sense cap garantia. Les eines estan pensades desde la recerca i com a suport tècnic i educatiu; la verificació dels resultats i la responsabilitat derivada del seu ús recauen únicament sobre l'usuari final.
 
 ---
 
@@ -59,20 +60,21 @@ guaitaPreus is an open tool for teaching and consulting that lets you **browse, 
 - **Mass price adjustment** with budget simulation, **price lock**, base-to-base comparison, certification evolution with **actual cost** (locks and certifications travel inside the BC3 as own `~Z|GUAITAPREUS` records), a warning when the BC3's declared type does not match its content, and a view of uninterpreted BC3 records.
 - Mapping to the **GuBIMClass** classification (see the notice below).
 - Dark and light themes.
+- Interface and help in **Catalan and English** (`pagesCAT` / `pagesENG`); the Excel/CSV importer understands Catalan, Spanish and English column headers.
 - Resizable and collapsible side panels, file tabs, focus mode, expand/collapse the tree by level or branch, collapsible filters and a detail view with collapsible sections.
 
 ### How to use it
-1. Open `pagesCAT/guaitaPreus.html` in your browser (or publish the repository with GitHub Pages and open `index.html`).
+1. Open `pagesENG/guaitaPreus.html` (English) or `pagesCAT/guaitaPreus.html` (Catalan) in your browser (or publish the repository with GitHub Pages and open `index.html`).
 2. Import your own BC3, or create a database or a budget.
-3. Read the help file: [`pagesCAT/HLP guaitaPreus-ajuda.html`](pagesCAT/HLP%20guaitaPreus-ajuda.html) (Catalan only for now).
+3. Read the help file: [`pagesENG/HLP guaitaPreus-help.html`](pagesENG/HLP%20guaitaPreus-help.html) (also in Catalan: [`pagesCAT/HLP guaitaPreus-ajuda.html`](pagesCAT/HLP%20guaitaPreus-ajuda.html)).
 
-> The user interface and the help are currently available **in Catalan only**; this README is bilingual.
+> The user interface and the help are available **in Catalan and in English**; the importer understands column headers in Catalan, Spanish and English.
 
 ### Data and privacy
 This repository **contains no price databases** (BC3). Any database you load belongs to its owners and is processed only in your browser.
 
 ### GuBIMClass
-The app can map concepts to **GuBIMClass** codes (© 2017 GuBIMCat). The code table belongs to third parties: it is **not included** in this repository or in the published app, and it is not covered by the AGPL. It can be loaded inside the app (*Eines ▸ GuBIMClass i mapejat*). See [`NOTICE.md`](NOTICE.md).
+The app can map concepts to **GuBIMClass** codes (© 2017 GuBIMCat). The code table belongs to third parties: it is **not included** in this repository or in the published app, and it is not covered by the AGPL. It can be loaded inside the app (*Tools ▸ GuBIMClass and mapping*). See [`NOTICE.md`](NOTICE.md).
 
 ### Licence
-GNU Affero General Public License v3.0 only. See [`LICENSE`](LICENSE). Guaita Apps is distributed "as is", without any warranty; verification of the results and any responsibility arising from their use rest solely with the end user.
+GNU Affero General Public License v3.0 only. See [`LICENSE`](LICENSE). Guaita Apps is distributed "as is", without any warranty. The tools are designed from research and as technical and educational support; verification of the results and any responsibility arising from their use rest solely with the end user.
